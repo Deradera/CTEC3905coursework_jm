@@ -6,11 +6,11 @@ body {
 
 header {
     width:100%;
-    position: absolute;
-    /*top:0;*/
+    height:6rem;
+    position: fixed;
+    top: 0;
 
     display:flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -32,23 +32,32 @@ a {
 }
 
 #chev-down {
-    padding: 0.5rem;
+    padding: 2rem;
+    border: none;
+    background-color: #f5f5f5;
 }
 
-.nav-bar {
-    list-style: none;
+#nav-bar {
     display:none;
+    position: absolute;
+    top:6rem;
+    right:0;
+    background-color: #f5f5f5;
 }
 
 nav ul li {
     padding: 1rem;
-    height:100%;
 
+    list-style: none;
     font-size: 20px;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li:focus {
     background-color: rgb(207, 207, 207);
+}
+
+main {
+    margin-top: 6rem;
 }
 
 #picture-banner {
@@ -68,9 +77,7 @@ nav ul li:hover {
 }
 
 @media only screen and (min-width: 500px) and (min-device-width: 500px) {
-    header {
-        flex-direction: row;
-    }
+
 }
 
 @media only screen and (min-width: 990px) and (min-device-width: 990px) {
@@ -78,8 +85,9 @@ nav ul li:hover {
         display:none;
     }
 
-    .nav-bar {
-        display: flex;
+    #nav-bar, #nav-bar ul {
+        display:flex;
         flex-direction: row;
+        position: static;
     }
 }
