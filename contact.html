@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Contact - AeroMed QMS</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactform.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <!--Font from Google Fonts-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,7 +45,23 @@
         </nav>
     </header>
     <main>
-
+        <article id="phoneAndEmail">
+            <p>Phone Number here</p>
+            <p>Email here</p>
+        </article>
+        <form id="contactform" action="mailto:p14152904@my365.dmu.ac.uk" method="post" enctype="text/plain">
+            Name/Company Name:
+            <br/>
+            <input type="text" name="name" required> 
+            E-mail:
+            <br/>
+            <input type="email" name="email" required> 
+            Message: (Please do not enclose any confidential information in this message.)
+            <br/>
+            <textarea id="contactmessage" name="message" required></textarea>
+            <input type="submit" name="send mail" value="Send">
+        </form>
+        <p id="messagesent">Your message has been sent!</p>
     </main>
     <footer>
 

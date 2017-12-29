@@ -1,0 +1,102 @@
+#phoneAndEmail {
+    height: 10rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#phoneAndEmail p {
+    padding: 3rem;
+}
+
+#contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 3rem;
+}
+
+#contactform input[type=submit] {
+    width: 12rem;
+    height: 7rem;
+    background-color: #036b5a;
+    color: #f5f5f5;
+    border: none;
+}
+
+#contactform input, #contactform textarea {
+    width: 95%;
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: inherit;
+    border-radius: 15px;
+    border:2px solid #8d8d8d;   
+}
+
+#contactform input {
+    height: 4rem;
+}
+
+#contactform textarea {
+    height: 20rem;
+}
+
+#contactform input:focus, #contactform textarea:focus {
+    border: 2px solid #036b5a
+}
+
+#contactform textarea {
+    height: 20rem;
+}
+
+#messagesent {
+    display:none;
+}
+
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+    #phoneAndEmail{ 
+        font-size: 20px;
+    }
+
+    #contactform {
+        font-size: 20px;
+    }
+    
+    #contactform input[type=submit] {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    #contactform input {
+        height: 2rem;
+    }
+
+    #contactform textarea {
+        height: 15rem;
+    }
+    
+    #contactform input, #contactform textarea {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (min-device-width: 1500px) {
+    #contactform input, #contactform textarea {
+        width: 60%;
+        padding: 1rem;
+    }
+
+    #contactform input[type=submit] {
+        width: 8rem;
+        height: 4rem;
+    }
+
+    #contactform textarea {
+        height: 20rem;
+    }
+}
