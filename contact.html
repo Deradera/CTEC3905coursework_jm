@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>Contact - AeroMed QMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font awesome used for down arrow icon, placed above stylesheets to make sure icons can be sized-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/contactform.css">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <!--Font from Google Fonts-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--font awesome used for down arrow icon-->
     <link rel="icon" href="img/AeroMedIcon.png">
 </head>
 
@@ -18,47 +18,58 @@
         <a href="index.html">
             <img id="logo" src="img/logo.png" alt="Aeromed Home">
         </a>
-        <button id="chev-down">
+        <div id="chev-down">
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </button>
+        </div>
         <nav id="nav-bar">
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="consultancy.html">Consultancy</a>
-                </li>
-                <li>
-                    <a href="certification.html">Certification</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <a href="index.html">
+                    <li>
+                        Home
+                    </li>
+                </a>
+                <a href="consultancy.html">
+                    <li>
+                        Consultancy
+                    </li>
+                </a>
+                <a href="certification.html">
+                    <li>
+                        Certification
+                    </li>
+                </a>
+                <a href="contact.html">
+                    <li>
+                        Contact
+                    </li>
+                </a>
             </ul>
-            <!--
-                    Sections for:
-                    certification
-                    consultancy
-                    contact
-                -->
         </nav>
     </header>
     <main>
-        <article id="phoneAndEmail">
-            <p>Phone Number here</p>
-            <p>Email here</p>
-        </article>
+        <aside id="phoneAndEmail">
+            <div id="phone">
+                <div class="circle">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <p>+447949180620</p>
+            </div>
+            <div id="email">
+                <div class="circle">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+                <p>AeroMedQMS@gmail.com</p>
+            </div>
+        </aside>
         <form id="contactform" action="mailto:p14152904@my365.dmu.ac.uk" method="post" enctype="text/plain">
             Name/Company Name:
             <br/>
-            <input type="text" name="name" required> 
-            E-mail:
+            <input type="text" name="name" required> E-mail:
             <br/>
-            <input type="email" name="email" required> 
-            Message: (Please do not enclose any confidential information in this message.)
+            <input type="email" name="email" required> Message:
             <br/>
-            <textarea id="contactmessage" name="message" required></textarea>
+            <textarea id="contactmessage" placeholder="Please do not enclose any confidential information in this message." name="message"
+                required></textarea>
             <input type="submit" name="send mail" value="Send">
         </form>
         <p id="messagesent">Your message has been sent!</p>

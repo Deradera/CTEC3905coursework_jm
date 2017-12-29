@@ -25,3 +25,5 @@ The shadow under the header bar is code adapted from [here](https://css-tricks.c
 # Image Sources
 
 * [Aeroplane image on first page](https://wallpaperscraft.com/download/aircraft_sky_smoke_flying_113843/3840x2400#)
+* [Space Station image on first page](https://wallpaperscraft.com/wallpaper/space_station_layout_solar_panels_58298)
+* [BAE Hawk MK67](https://wallpaperscraft.com/download/bae_hawk_mk_67_attack_aircraft_flying_military_109931/1920x1080#)

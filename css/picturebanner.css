@@ -1,0 +1,97 @@
+#picture-banner {
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    overflow-y: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #036b5a; 
+}
+
+#banner-overlay {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #f5f5f5;
+    font-size: 5rem;
+    opacity: 0.5;
+    background-color: #036b5a;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+#picture-banner img {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#aircraft1 {
+    animation: fadeimg1 16s infinite;
+}
+
+#spacestation {
+    animation: fadeimg2 16s infinite;
+}
+
+#hawk-mk-67 {
+    top: -2rem;
+    animation: fadeimg3 16s infinite;
+}
+
+#medsupplies {
+    animation: fadeimg4 16s infinite;
+}
+
+@keyframes fadeimg1
+{
+  0%  { opacity: 1 }
+  25% { opacity: 0 }
+  50% { opacity: 0 }
+  75% { opacity: 0 }
+  100% { opacity: 1 }
+}
+@keyframes fadeimg2
+{
+  0%  { opacity: 0 }
+  25% { opacity: 1 }
+  50% { opacity: 0 }
+  75% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fadeimg3
+{
+  0% { opacity: 0 }
+  25% { opacity: 0 }
+  50% { opacity: 1 }
+  75% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fadeimg4
+{
+  0% { opacity: 0 }
+  25% { opacity: 0 }
+  50% { opacity: 0 }
+  75% { opacity: 1 }
+  100% { opacity: 0}
+}
+
+@media only screen and (min-width: 1500px) and (min-device-width: 1500px) {
+    #aircraft1 {
+        top: -16rem;
+    }
+
+    #hawk-mk-67 {
+        top: -10rem;
+    }
+}

@@ -9,7 +9,7 @@ header {
     height:6rem;
     position: fixed;
     top: 0;
-
+    z-index:1;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,19 +62,8 @@ nav ul li:hover, nav ul li:focus {
 
 main {
     margin-top: 6rem;
-    scroll-behavior: smooth;
-}
-
-#picture-banner {
-    width: 100%;
-    height: 20rem;
-
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    background: url("img\aircraft1.jpg") #036b5a; 
 }
 
 @media only screen and (min-width: 500px) and (min-device-width: 500px) {
