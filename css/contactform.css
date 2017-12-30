@@ -7,19 +7,9 @@
     flex-wrap: wrap;
 }
 
-.circle {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: #036b5a;
-    border-radius: 50px;
-}
-
 .fa-phone, .fa-envelope-o {
     margin: auto;
-    font-size: 4rem;
+    font-size: 70px;
     color: #f5f5f5;
 }
 

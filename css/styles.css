@@ -69,20 +69,52 @@ main {
 }
 
 .information {
-    width: 100%;
-    padding: 2rem;
+    width: 90%;
+    padding: 1rem;
+    font-size: 20px;
 }
 
-#medical {
-    padding: 2rem;
-    background-color: rgb(255, 42, 42);
+.circle {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #036b5a;
+    border-radius: 50px;
 }
 
-@media only screen and (min-width: 500px) and (min-device-width: 500px) {
-
+#isoicon {
+    width: 70px;
+    margin: auto;
 }
 
-@media only screen and (min-width: 990px) and (min-device-width: 990px) {
+#infocirclescontainer {
+    width:100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infocircle {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-check-circle-o, .fa-repeat {
+    margin: auto;
+    font-size: 70px;
+}
+
+#infusion-pump {
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 995px) and (min-device-width: 995px) {
     #chev-down {
         display:none;
     }
@@ -95,5 +127,16 @@ main {
 
     .information {
         width: 60%;
+    }
+
+    #infocirclescontainer {
+        flex-direction: row;
+    }
+
+    #infusion-pump {
+        width: 25rem;
+        position: absolute;
+        top: 18rem;
+        right: 3rem;
     }
 }
